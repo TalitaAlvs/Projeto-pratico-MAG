@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Dashboard</title>
 </head>
 <body>
-    <nav class="sidebar">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <!-- Criar uma logo e adicioná-la aqui -->
-                    <img src="/IMG/logo-provisoria.png" alt="logo">
-                </span>
-
-                <div class="text header-text">
-                    <span class="name">ARTIKLE</span>
-                </div>
-            </div>
-
-            <i class='bx bxs-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bxs-info-circle'></i>
-                            <span class="text nav-text">Informações</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <!-- Criar uma logo e adicioná-la aqui. -->
+            <i class='bx bx-loader-circle'></i>
+            <span class="logo_name">ARTIKLE</span>
         </div>
-    </nav>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-info-circle icon'></i>
+                    <span class="link_name">Informações</span>
+                </a>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <a href="#">
+                        <i class='bx bxs-info-circle icon'></i>
+                        <span class="link_name">Informações</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="dropdown-menu">
+                    <li><a class="link_name" href="#">Informações</a></li>
+                    <li><a href="#">Sobre a Artikle</a></li>
+                    <li><a href="#">Sobre o modelo ABNT</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <a href="#">
+                        <i class='bx bxs-cog icon'></i>
+                        <span class="link_name">Configurações</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
