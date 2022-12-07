@@ -9,19 +9,22 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="sidebar close">
+    <div class="sidebar">
         <div class="logo-details">
             <!-- Criar uma logo e adicioná-la aqui. -->
             <i class='bx bx-loader-circle'></i>
             <span class="logo_name">ARTIKLE</span>
         </div>
         <ul class="nav-links">
-            <!--<li>
+            <li>
                 <a href="#">
-                    <i class='bx bxs-info-circle icon'></i>
-                    <span class="link_name">Informações</span>
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
                 </a>
-            </li>-->
+                <ul class="dropdown-menu blank">
+                    <li><a class="link_name" href="#">Informações</a></li>
+                </ul>
+            </li>
 
             <li>
                 <div class="dropdown">
@@ -46,8 +49,33 @@
                     </a>
                     <i class='bx bx-chevron-down arrow'></i>
                 </div>
+                <ul class="dropdown-menu">
+                    <li><a class="link_name" href="#">Configurações</a></li>
+                    <li><a href="#">Editar perfil</a></li>
+                    <li><a href="#">Editar preferências</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="/IMG/profile-default.png" alt="profile">
+                    </div>
+                    <div class="username">
+                        <div class="profile_name">Username</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
             </li>
         </ul>
     </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu-alt-left'></i>
+            <span class="text">Menu</span>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
